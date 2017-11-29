@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="BasicWeb.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+ 
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="Content/bootstrap-grid.min.css" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script> 
+
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+         
+     
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4" style="border:3px groove black">
+                    <asp:ContentPlaceHolder ID="Kolom1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="col-lg-6 col-xs-6 col-md-6 col-sm-6" style="border:2px solid green">
+                    <asp:ContentPlaceHolder ID="Kolom2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="col-lg-2 col-xs-2 col-md-2 col-sm-2" style="border:3px dotted navy">
+                    <asp:ContentPlaceHolder ID="Kolom3" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-xs-3 col-md-3 col-sm-3" style="border:3px groove black">
+                    <p> ROW 2 KOLOM 1 </p>
+                </div>
+                <div class="col-lg-3 col-xs-3 col-md-3 col-sm-3" style="border:2px solid green">
+                    <p>ROW 2 KOLOM 2</p>
+                </div>
+                <div class="col-lg-3 col-xs-3 col-md-3 col-sm-3" style="border:3px dotted navy">
+                    <p>ROW 2 KOLOM 3</p>   
+                </div>
+            </div>
+        </div>
+           
+    </form>
+</body>
+</html>
